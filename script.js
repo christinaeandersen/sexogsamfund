@@ -23,7 +23,7 @@ function hideStart() {
     document.querySelector("#play").classList.remove("show");
     document.querySelector("#play").classList.remove("pulse");
 
-    showSenarie1();
+    showScenarie1();
 
 }
 
@@ -31,7 +31,17 @@ function showScenarie1() {
     console.log("show scenarie1");
     document.querySelector("#scenarie1").classList.add("show");
 
-    document.querySelector("#scenarie1_animation").classList.add("show");
+    document.querySelector("#telefon").classList.add("show");
 
+    setTimeout(animationSenarie1, 4000);
+
+}
+
+function animationSenarie1() {
+    document.querySelector("#telefon").classList.add("shake");
+    document.querySelector("#telefon").classList.remove("show");
+    document.querySelector("#")
+    document.querySelector("#besked_tone").play();
+    document.querySelector("#vibration_mobil").play();
 
 }

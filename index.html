@@ -14,7 +14,7 @@
 
 <body>
 
-    <div id="screen">
+    <div id="screen" class="hide">
 
 
         <!---------- START GAME ---------->
@@ -25,8 +25,9 @@
 
         <!---------- SCENARIER ---------->
 
-        <div id="scenarie1" class="hide"></div>
-        <div id="scenarie1_animation"></div>
+        <div id="scenarie1" class="hide">
+            <div id="telefon" class="hide"></div>
+        </div>
 
 
         <div id="scenarie2" class="hide"></div>
@@ -70,15 +71,16 @@
         <!---------- MUSIC ---------->
 
         <audio src="music/baggrunds_larm.mp3"></audio>
-        <audio src="music/besked_tone.mp3"></audio>
+        <audio id="besked_tone" src="music/besked_tone.mp3"></audio>
         <audio src="music/bruser.mp3"></audio>
         <audio src="music/b%C3%B8rn_baggrund.mp3"></audio>
         <audio src="music/kamera.mp3"></audio>
-        <audio src="music/mobil_vibration.mp3"></audio>
+        <audio id="vibration_mobil" src="music/mobil_vibration.mp3"></audio>
+
+
+        <script src="script.js"></script>
 
     </div>
-
-    <script src="script.js"></script>
 
 </body>
 
