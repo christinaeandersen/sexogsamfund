@@ -89,46 +89,93 @@ body {
     /*     display: none; */
 
 
+}
+
+#telefon_tissemand {
+
+    position: absolute;
+    width: 35vw;
+    height: 65vw;
+    top: 5vw;
+    left: 53vw;
+    background-image: url(pics/tissemand.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    /*     display: none; */
+
 
 }
 
+#dilemma1 {
+    background-image: url(pics/scenarie_1.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 8vw;
+    width: 60vw;
+    background-repeat: no-repeat;
+    top: 5vw;
 
+}
 
+#valg1 {
+    background-image: url(pics/mulighed_1.1.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 8vw;
+    width: 60vw;
+    background-repeat: no-repeat;
+    top: 15vw;
+    cursor: pointer;
+}
 
+#valg2 {
+    background-image: url(pics/mulighed_1.2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 10vw;
+    width: 70vw;
+    background-repeat: no-repeat;
+    top: 21vw;
+    left: -11vw;
+    cursor: pointer;
+}
 
-/********** **********/
-
-
-
-
-
-
-
-/********** RESULTS **********/
+#valg3 {
+    background-image: url(pics/mulighed_1.3.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 8vw;
+    width: 60vw;
+    background-repeat: no-repeat;
+    top: 28vw;
+    left: -3vw;
+    cursor: pointer;
+}
 
 #result1 {
-
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/resultatlys.svg);
+    background-image: url(pics/resultat1_2.svg);
+    background-size: 100%;
 }
 
-
 #result2 {
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/resultatmellem.svg);
-
+    background-image: url(pics/senarie1_1.svg);
+    background-size: 100%;
 }
 
 #result3 {
-    position: relative;
+    position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/resultatmoerk.svg);
+    background-image: url(pics/senarie1_3.svg);
+    background-size: 100%;
 }
+
 
 
 /* effekter */
