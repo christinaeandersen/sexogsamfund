@@ -177,6 +177,130 @@ body {
 }
 
 
+#next {
+    background-image: url(pics/play2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    top: 43vw;
+    left: 85vw;
+    cursor: pointer;
+
+}
+
+#scenarie2 {
+    background-image: url(pics/gym.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 56.25vw;
+    width: 100vw;
+    filter: blur(50%);
+}
+
+#snapchat {
+    background-image: url(pics/laaseskearm.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 35vw;
+    height: 65vw;
+    top: 5vw;
+    left: 39vw;
+}
+
+#snapchat_nøgen {
+    background-image: url(pics/noegenpige.svg);
+    background-size: 100%;
+    position: absolute;
+    width: 35vw;
+    height: 65vw;
+    top: 5vw;
+    left: 62vw;
+}
+
+#dilemma2 {
+    background-image: url(pics/scenarie_2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 30vw;
+    width: 80vw;
+    background-repeat: no-repeat;
+    top: -1vw;
+
+}
+
+#valg1_2 {
+    background-image: url(pics/mulighed_2.1.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 10vw;
+    width: 80vw;
+    background-repeat: no-repeat;
+    top: 20vw;
+    cursor: pointer;
+}
+
+#valg2_2 {
+    background-image: url(pics/mulighed2_2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 10vw;
+    width: 80vw;
+    background-repeat: no-repeat;
+    top: 27vw;
+    left: -2vw;
+    cursor: pointer;
+}
+
+#valg3_2 {
+    background-image: url(pics/mulighed_2.3.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 11vw;
+    width: 70vw;
+    background-repeat: no-repeat;
+    top: 37vw;
+    left: -1vw;
+    cursor: pointer;
+}
+
+#result2_1 {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(pics/senarie2_1.svg);
+    background-size: 100%;
+}
+
+#result2_2 {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(pics/senarie2_2.svg);
+    background-size: 100%;
+}
+
+#result2_3 {
+    position: absolute;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(pics/senarie2_3.svg);
+    background-size: 100%;
+}
+
+
+#next2 {
+    background-image: url(pics/play2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    top: 43vw;
+    left: 85vw;
+    cursor: pointer;
+
+}
+
 
 /* effekter */
 .hide {
