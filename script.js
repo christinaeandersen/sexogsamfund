@@ -35,7 +35,6 @@ function hideStart() {
 function showScenarie1() {
     console.log("show scenarie1");
     document.querySelector("#scenarie1").classList.add("show");
-
     document.querySelector("#telefon").classList.add("show");
 
     setTimeout(animationSenarie1, 4000);
@@ -43,9 +42,13 @@ function showScenarie1() {
 }
 
 function animationSenarie1() {
+
+    //SKIFT AF TELEFON SKÆRM//
     document.querySelector("#telefon_tissemand").classList.add("shake");
     document.querySelector("#telefon").classList.remove("show");
     document.querySelector("#telefon_tissemand").classList.add("show");
+
+    //LYD//
     document.querySelector("#besked_tone").play();
     document.querySelector("#vibration_mobil").play();
 
@@ -64,9 +67,7 @@ function showOptions1() {
 
     //KLIK FOR RESULTAT//
     document.querySelector("#valg1").addEventListener("click", showResult1_1);
-
     document.querySelector("#valg2").addEventListener("click", showResult1_2);
-
     document.querySelector("#valg3").addEventListener("click", showResult1_3);
 }
 
@@ -179,8 +180,9 @@ function showSenarie2() {
 function animationSenarie2() {
     console.log("animationSenarie2");
 
+    //SKIFT AF BILLEDE PÅ TELEFON VED SNAP//
     //document.querySelector("#snapchat").classList.remove("show");
-    //document.querySelector("#telefon_tissemand").classList.add("show");
+    //document.querySelector("#").classList.add("show");
     document.querySelector("#kamera").play();
 
     setTimeout(showSenarie2_frame2, 1000);
@@ -190,7 +192,10 @@ function animationSenarie2() {
 function showSenarie2_frame2() {
     console.log("showSenarie2_frame2")
 
+    //SKAL FJERNES NÅR ANAIMATIONEN OVER KØRER//
     document.querySelector("#snapchat").classList.remove("show");
+
+    //NØGEN PIGE//
     document.querySelector("#snapchat_nøgen").classList.add("show");
 
     showOptions2();
@@ -206,10 +211,9 @@ function showOptions2() {
     document.querySelector("#valg2_2").classList.add("show");
     document.querySelector("#valg3_2").classList.add("show");
 
+    //KLIK FOR RESULTAT//
     document.querySelector("#valg1_2").addEventListener("click", showResult2_1);
-
     document.querySelector("#valg2_2").addEventListener("click", showResult2_2);
-
     document.querySelector("#valg3_2").addEventListener("click", showResult2_3);
 }
 
@@ -268,7 +272,6 @@ function hideResult2_1() {
     document.querySelector("#valg1_2").classList.remove("show");
     document.querySelector("#valg2_2").classList.remove("show");
     document.querySelector("#valg3_2").classList.remove("show");
-
     document.querySelector("#result2_1").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
@@ -284,7 +287,6 @@ function hideResult2_2() {
     document.querySelector("#valg1_2").classList.remove("show");
     document.querySelector("#valg2_2").classList.remove("show");
     document.querySelector("#valg3_2").classList.remove("show");
-
     document.querySelector("#result2_2").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
@@ -300,7 +302,6 @@ function hideResult2_3() {
     document.querySelector("#valg1_2").classList.remove("show");
     document.querySelector("#valg2_2").classList.remove("show");
     document.querySelector("#valg3_2").classList.remove("show");
-
     document.querySelector("#result2_3").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
@@ -319,7 +320,7 @@ function startSenarie3() {
     //LYD///
     document.querySelector("#fest_larm").play();
 
-    setTimeout(hideSenarie3, 1000);
+    setTimeout(hideSenarie3, 1500);
 
 }
 
@@ -341,7 +342,7 @@ function startSenarie3_frame2() {
     document.querySelector("#person_oppe_3").classList.add("show");
     document.querySelector("#bryster").classList.add("show");
 
-    setTimeout(hideSenarie3_frame2, 1000);
+    setTimeout(hideSenarie3_frame2, 2000);
 
 }
 
@@ -360,15 +361,11 @@ function startSenarie3_frame3() {
 
     document.querySelector("#bryster_stor").classList.add("show");
     document.querySelector("#dilemma3").classList.add("show");
-
     document.querySelector("#valg3_3_1").classList.add("show");
-
     document.querySelector("#valg3_3_2").classList.add("show");
-
     document.querySelector("#valg3_3_3").classList.add("show");
 
     ///klik for resultat/////
-
     document.querySelector("#valg3_3_1").addEventListener("click", showResult3_1);
     document.querySelector("#valg3_3_2").addEventListener("click", showResult3_2);
     document.querySelector("#valg3_3_3").addEventListener("click", showResult3_3);
@@ -389,8 +386,10 @@ function showResult3_1() {
     document.querySelector("#valg3_3_2").classList.remove("show");
     document.querySelector("#valg3_3_3").classList.remove("show");
 
+    //VIS RESULTAT//
     document.querySelector("#result3_1").classList.add("show");
 
+    //FREM KNAP//
     document.querySelector("#next3").classList.add("show");
     document.querySelector("#next3").addEventListener("click", hideResult3_1);
 }
@@ -430,8 +429,10 @@ function showResult3_3() {
     document.querySelector("#valg3_3_2").classList.remove("show");
     document.querySelector("#valg3_3_3").classList.remove("show");
 
+    //VIS RESULTAT//
     document.querySelector("#result3_3").classList.add("show");
 
+    //FREM KANP//
     document.querySelector("#next3").classList.add("show");
     document.querySelector("#next3").addEventListener("click", hideResult3_3);
 }
@@ -441,7 +442,6 @@ function hideResult3_1() {
     console.log("hideResult3_1");
 
     document.querySelector("#result3_1").classList.remove("show");
-
     document.querySelector("#next3").classList.remove("show");
 
     endGame();
@@ -451,7 +451,6 @@ function hideResult3_2() {
     console.log("hideResult3_2");
 
     document.querySelector("#result3_2").classList.remove("show");
-
     document.querySelector("#next3").classList.remove("show");
 
     endGame();
@@ -462,7 +461,6 @@ function hideResult3_3() {
     console.log("hideResult3_3");
 
     document.querySelector("#result3_3").classList.remove("show");
-
     document.querySelector("#next3").classList.remove("show");
 
     endGame();

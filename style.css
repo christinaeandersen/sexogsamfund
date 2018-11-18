@@ -4,8 +4,6 @@ body {
 
 }
 
-/********** START **********/
-
 /* {
     touch-action: none;
     -moz-user-select: none;
@@ -30,6 +28,7 @@ body {
 
 }
 
+/********** START **********/
 
 #start {
 
@@ -64,7 +63,7 @@ body {
 
 
 
-/********** SCENARIER **********/
+/********** SCENARIE 1 **********/
 
 
 #scenarie1 {
@@ -105,6 +104,8 @@ body {
 
 
 }
+
+/*****DILLEMMA , VALG OG RESULTAT**********/
 
 #dilemma1 {
     background-image: url(pics/scenarie_1.svg);
@@ -189,6 +190,8 @@ body {
 
 }
 
+/********** SCENARIE 2 **********/
+
 #scenarie2 {
     background-image: url(pics/gym.svg);
     background-size: 100%;
@@ -208,6 +211,8 @@ body {
     left: 39vw;
 }
 
+/*****DILLEMMA , VALG OG RESULTAT**********/
+
 #snapchat_nøgen {
     background-image: url(pics/noegenpige.svg);
     background-size: 100%;
@@ -217,6 +222,7 @@ body {
     top: 5vw;
     left: 62vw;
 }
+
 
 #dilemma2 {
     background-image: url(pics/scenarie_2.svg);
@@ -300,6 +306,8 @@ body {
     cursor: pointer;
 
 }
+
+/***********SENARIE 3************/
 
 #scenarie3 {
     background-image: url(pics/party.svg);
@@ -385,6 +393,8 @@ body {
     left: 40vw;
     transform: rotate(180deg);
 }
+
+/*****DILLEMMA , VALG OG RESULTAT**********/
 
 #bryster_stor {
     background-image: url(pics/pige_krop.svg);
@@ -476,7 +486,7 @@ body {
 }
 
 
-/* effekter */
+/***********EFFEKTER***********/
 .hide {
     visibility: hidden;
 }
