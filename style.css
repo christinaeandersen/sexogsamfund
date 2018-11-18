@@ -301,6 +301,180 @@ body {
 
 }
 
+#scenarie3 {
+    background-image: url(pics/party.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 56.25vw;
+    width: 100vw;
+}
+
+#person1 {
+    background-image: url(pics/test_pige_fniser.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 39vw;
+    width: 15vw;
+    top: 17vw;
+    left: 65vw;
+}
+
+#person2 {
+    background-image: url(pics/test_dreng_bog.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 38vw;
+    width: 19vw;
+    top: 18vw;
+    left: 51vw;
+
+}
+
+
+#person3 {
+    background-image: url(pics/test_dreng_peger.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 39vw;
+    width: 30vw;
+    top: 17vw;
+    left: 25vw;
+
+}
+
+#person_oppe_1 {
+    background-image: url(pics/oppefrapige.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 60vw;
+    width: 45vw;
+    top: -1vw;
+    left: 68vw;
+}
+
+#person_oppe_2 {
+    background-image: url(pics/oppefrafregne.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 60vw;
+    width: 50vw;
+    top: -10vw;
+    left: 25vw;
+
+}
+
+
+#person_oppe_3 {
+    background-image: url(pics/oppefraboelle.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 60vw;
+    width: 40vw;
+    top: -2vw;
+    left: -10vw;
+
+}
+
+#bryster {
+    background-image: url(pics/telefon_pige_krop.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 25vw;
+    width: 20vw;
+    top: 25vw;
+    left: 40vw;
+    transform: rotate(180deg);
+}
+
+#bryster_stor {
+    background-image: url(pics/pige_krop.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 50vw;
+    width: 40vw;
+    top: 6vw;
+    left: 60vw;
+}
+
+#dilemma3 {
+    background-image: url(pics/scenarie_3.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 30vw;
+    width: 70vw;
+    top: 0vw;
+    left: 1vw;
+}
+
+#valg3_3_1 {
+    background-image: url(pics/mulighed_3.1.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 13vw;
+    width: 60vw;
+    top: 25vw;
+    left: 8vw;
+    cursor: pointer;
+}
+
+#valg3_3_2 {
+    background-image: url(pics/mulighed_3.2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 9.5vw;
+    width: 70vw;
+    top: 36vw;
+    left: 1vw;
+    cursor: pointer;
+}
+
+#valg3_3_3 {
+    background-image: url(pics/mulighed_3.3.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 8vw;
+    width: 70vw;
+    top: 45vw;
+    left: 1vw;
+    cursor: pointer;
+}
+
+#result3_1 {
+    background-image: url(pics/senarie3_1.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 56.25vw;
+    width: 100vw;
+}
+
+#result3_2 {
+    background-image: url(pics/senarie3_2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 56.25vw;
+    width: 100vw;
+}
+
+#result3_3 {
+    background-image: url(pics/senarie3_3.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 56.25vw;
+    width: 100vw;
+}
+
+#next3 {
+    background-image: url(pics/play2.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 15vw;
+    width: 15vw;
+    top: 43vw;
+    left: 85vw;
+    cursor: pointer;
+
+}
+
 
 /* effekter */
 .hide {

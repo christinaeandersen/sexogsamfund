@@ -62,6 +62,7 @@ function showOptions1() {
     document.querySelector("#valg2").classList.add("show");
     document.querySelector("#valg3").classList.add("show");
 
+    //KLIK FOR RESULTAT//
     document.querySelector("#valg1").addEventListener("click", showResult1_1);
 
     document.querySelector("#valg2").addEventListener("click", showResult1_2);
@@ -73,6 +74,8 @@ function showOptions1() {
 
 function showResult1_1() {
     console.log("showResult1_1");
+
+    //SKJUL SENARIE 1//
     document.querySelector("#scenarie1").classList.remove("show");
     document.querySelector("#telefon_tissemand").classList.remove("shake");
     document.querySelector("#telefon_tissemand").classList.remove("show");
@@ -81,7 +84,10 @@ function showResult1_1() {
     document.querySelector("#valg2").classList.remove("show");
     document.querySelector("#valg3").classList.remove("show");
 
+    //VIS DILEMMA OG MULIGHEDER//
     document.querySelector("#result2").classList.add("show");
+
+    //FREM KNAP//
     document.querySelector("#next").classList.add("show");
     document.querySelector("#next").addEventListener("click", hideResult1_1);
 }
@@ -90,6 +96,8 @@ function showResult1_1() {
 
 function showResult1_2() {
     console.log("showResult1_2");
+
+    //SKJUL SENARIE 1//
     document.querySelector("#scenarie1").classList.remove("show");
     document.querySelector("#telefon_tissemand").classList.remove("shake");
     document.querySelector("#telefon_tissemand").classList.remove("show");
@@ -98,7 +106,10 @@ function showResult1_2() {
     document.querySelector("#valg2").classList.remove("show");
     document.querySelector("#valg3").classList.remove("show");
 
+    //VIS DILEMMA OG MULIGHEDER//
     document.querySelector("#result1").classList.add("show");
+
+    //FREM KNAP//
     document.querySelector("#next").classList.add("show");
     document.querySelector("#next").addEventListener("click", hideResult1_2);
 }
@@ -107,6 +118,8 @@ function showResult1_2() {
 
 function showResult1_3() {
     console.log("showResult1_3");
+
+    //SKJUL SENARIE 1//
     document.querySelector("#scenarie1").classList.remove("show");
     document.querySelector("#telefon_tissemand").classList.remove("shake");
     document.querySelector("#telefon_tissemand").classList.remove("show");
@@ -115,7 +128,10 @@ function showResult1_3() {
     document.querySelector("#valg2").classList.remove("show");
     document.querySelector("#valg3").classList.remove("show");
 
+    //VIS DILEMMA OG MULIGHEDER//
     document.querySelector("#result3").classList.add("show");
+
+    //FREM KNAP//
     document.querySelector("#next").classList.add("show");
     document.querySelector("#next").addEventListener("click", hideResult1_3);
 }
@@ -151,6 +167,10 @@ function showSenarie2() {
 
     document.querySelector("#scenarie2").classList.add("show");
     document.querySelector("#snapchat").classList.add("show");
+
+    //LYD//
+    document.querySelector("#bruser_larm").play();
+    document.querySelector("#bruser").play();
 
     setTimeout(animationSenarie2, 1000);
 
@@ -202,6 +222,10 @@ function showResult2_1() {
     document.querySelector("#next2").classList.add("show");
     document.querySelector("#next2").addEventListener("click", hideResult2_1);
 
+    //LYD//
+    document.querySelector("#bruser_larm").pause();
+    document.querySelector("#bruser").pause();
+
 }
 
 ///RESULTAT 2/////
@@ -213,6 +237,9 @@ function showResult2_2() {
     document.querySelector("#next2").classList.add("show");
     document.querySelector("#next2").addEventListener("click", hideResult2_2);
 
+    //LYD//
+    document.querySelector("#bruser_larm").pause();
+    document.querySelector("#bruser").pause();
 
 }
 
@@ -224,6 +251,10 @@ function showResult2_3() {
     document.querySelector("#result2_3").classList.add("show");
     document.querySelector("#next2").classList.add("show");
     document.querySelector("#next2").addEventListener("click", hideResult2_3);
+
+    //LYD//
+    document.querySelector("#bruser_larm").pause();
+    document.querySelector("#bruser").pause();
 
 }
 
@@ -241,6 +272,7 @@ function hideResult2_1() {
     document.querySelector("#result2_1").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
+    startSenarie3();
 
 }
 
@@ -256,7 +288,7 @@ function hideResult2_2() {
     document.querySelector("#result2_2").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
-
+    startSenarie3();
 
 }
 
@@ -271,5 +303,171 @@ function hideResult2_3() {
 
     document.querySelector("#result2_3").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
+
+    startSenarie3();
+}
+
+///SENARIE 3////
+
+function startSenarie3() {
+    console.log("startSenarie3");
+    document.querySelector("#scenarie3").classList.add("show");
+    document.querySelector("#person1").classList.add("show");
+    document.querySelector("#person2").classList.add("show");
+    document.querySelector("#person3").classList.add("show");
+
+    //LYD///
+    document.querySelector("#fest_larm").play();
+
+    setTimeout(hideSenarie3, 1000);
+
+}
+
+function hideSenarie3() {
+    console.log("hideSenarie3");
+
+    document.querySelector("#person1").classList.remove("show");
+    document.querySelector("#person2").classList.remove("show");
+    document.querySelector("#person3").classList.remove("show");
+
+    startSenarie3_frame2();
+
+}
+
+function startSenarie3_frame2() {
+    console.log("startSenarie3_frame2");
+    document.querySelector("#person_oppe_1").classList.add("show");
+    document.querySelector("#person_oppe_2").classList.add("show");
+    document.querySelector("#person_oppe_3").classList.add("show");
+    document.querySelector("#bryster").classList.add("show");
+
+    setTimeout(hideSenarie3_frame2, 1000);
+
+}
+
+function hideSenarie3_frame2() {
+    document.querySelector("#person_oppe_1").classList.remove("show");
+    document.querySelector("#person_oppe_2").classList.remove("show");
+    document.querySelector("#person_oppe_3").classList.remove("show");
+    document.querySelector("#bryster").classList.remove("show");
+
+    startSenarie3_frame3();
+
+}
+
+function startSenarie3_frame3() {
+    console.log("startSenarie3_frame3");
+
+    document.querySelector("#bryster_stor").classList.add("show");
+    document.querySelector("#dilemma3").classList.add("show");
+
+    document.querySelector("#valg3_3_1").classList.add("show");
+
+    document.querySelector("#valg3_3_2").classList.add("show");
+
+    document.querySelector("#valg3_3_3").classList.add("show");
+
+    ///klik for resultat/////
+
+    document.querySelector("#valg3_3_1").addEventListener("click", showResult3_1);
+    document.querySelector("#valg3_3_2").addEventListener("click", showResult3_2);
+    document.querySelector("#valg3_3_3").addEventListener("click", showResult3_3);
+
+}
+
+function showResult3_1() {
+    console.log("showResult3_1");
+
+    //LYD//
+    document.querySelector("#fest_larm").pause();
+
+    //SKJUL SENARIE 3///
+    document.querySelector("#scenarie3").classList.remove("show");
+    document.querySelector("#bryster_stor").classList.remove("show");
+    document.querySelector("#dilemma3").classList.remove("show");
+    document.querySelector("#valg3_3_1").classList.remove("show");
+    document.querySelector("#valg3_3_2").classList.remove("show");
+    document.querySelector("#valg3_3_3").classList.remove("show");
+
+    document.querySelector("#result3_1").classList.add("show");
+
+    document.querySelector("#next3").classList.add("show");
+    document.querySelector("#next3").addEventListener("click", hideResult3_1);
+}
+
+function showResult3_2() {
+    console.log("showResult3_2");
+
+    //LYD///
+    document.querySelector("#fest_larm").pause();
+
+    //SKJUL SENARIE 3///
+    document.querySelector("#scenarie3").classList.remove("show");
+    document.querySelector("#bryster_stor").classList.remove("show");
+    document.querySelector("#dilemma3").classList.remove("show");
+    document.querySelector("#valg3_3_1").classList.remove("show");
+    document.querySelector("#valg3_3_2").classList.remove("show");
+    document.querySelector("#valg3_3_3").classList.remove("show");
+
+    document.querySelector("#result3_2").classList.add("show");
+
+    document.querySelector("#next3").classList.add("show");
+    document.querySelector("#next3").addEventListener("click", hideResult3_2);
+
+}
+
+function showResult3_3() {
+    console.log("showResult3_3");
+
+    //LYD///
+    document.querySelector("#fest_larm").pause();
+
+    //SKJUL SENARIE 3///
+    document.querySelector("#scenarie3").classList.remove("show");
+    document.querySelector("#bryster_stor").classList.remove("show");
+    document.querySelector("#dilemma3").classList.remove("show");
+    document.querySelector("#valg3_3_1").classList.remove("show");
+    document.querySelector("#valg3_3_2").classList.remove("show");
+    document.querySelector("#valg3_3_3").classList.remove("show");
+
+    document.querySelector("#result3_3").classList.add("show");
+
+    document.querySelector("#next3").classList.add("show");
+    document.querySelector("#next3").addEventListener("click", hideResult3_3);
+}
+
+
+function hideResult3_1() {
+    console.log("hideResult3_1");
+
+    document.querySelector("#result3_1").classList.remove("show");
+
+    document.querySelector("#next3").classList.remove("show");
+
+    endGame();
+}
+
+function hideResult3_2() {
+    console.log("hideResult3_2");
+
+    document.querySelector("#result3_2").classList.remove("show");
+
+    document.querySelector("#next3").classList.remove("show");
+
+    endGame();
+}
+
+
+function hideResult3_3() {
+    console.log("hideResult3_3");
+
+    document.querySelector("#result3_3").classList.remove("show");
+
+    document.querySelector("#next3").classList.remove("show");
+
+    endGame();
+}
+
+function endGame() {
 
 }
