@@ -4,6 +4,8 @@ body {
 
 }
 
+/********** START **********/
+
 /* {
     touch-action: none;
     -moz-user-select: none;
@@ -28,14 +30,13 @@ body {
 
 }
 
-/********** START **********/
 
 #start {
 
     position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/startskaerm.svg);
+    background-image: url(baggrunde_svg/startskaerm.png);
     background-size: 100%;
 
     overflow: hidden;
@@ -53,17 +54,23 @@ body {
     position: absolute;
     width: 20vw;
     height: 20vw;
-    top: 30vw;
-    left: 40.5vw;
+    top: 12.5vw;
+    left: 28vw;
     background-image: url(pics/play1.svg);
 
     cursor: pointer;
 
 }
 
+play:hover {
+
+    width: 22vw;
+    height: 22vw;
+}
 
 
-/********** SCENARIE 1 **********/
+
+/********** SCENARIER **********/
 
 
 #scenarie1 {
@@ -105,8 +112,6 @@ body {
 
 }
 
-/*****DILLEMMA , VALG OG RESULTAT**********/
-
 #dilemma1 {
     background-image: url(pics/scenarie_1.svg);
     background-size: 100%;
@@ -122,10 +127,11 @@ body {
     background-image: url(pics/mulighed_1.1.svg);
     background-size: 100%;
     position: absolute;
-    height: 8vw;
-    width: 60vw;
+    height: 7vw;
+    width: 50vw;
     background-repeat: no-repeat;
     top: 15vw;
+    left: 10vw;
     cursor: pointer;
 }
 
@@ -157,7 +163,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/resultat1_2.svg);
+    background-image: url(Resultatskaerme1/resultat1_2.svg);
     background-size: 100%;
 }
 
@@ -165,7 +171,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/senarie1_1.svg);
+    background-image: url(Resultatskaerme1/senarie1_1.svg);
     background-size: 100%;
 }
 
@@ -173,24 +179,28 @@ body {
     position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/senarie1_3.svg);
+    background-image: url(Resultatskaerme1/senarie1_3.svg);
     background-size: 100%;
 }
 
 
 #next {
-    background-image: url(pics/play2.svg);
+    background-image: url(pics/next_button.svg);
     background-size: 100%;
     position: absolute;
-    height: 15vw;
-    width: 15vw;
+    height: 10vw;
+    width: 10vw;
     top: 43vw;
     left: 85vw;
     cursor: pointer;
 
 }
 
-/********** SCENARIE 2 **********/
+#next:hover {
+
+    width: 11vw;
+    height: 11vw;
+}
 
 #scenarie2 {
     background-image: url(pics/gym.svg);
@@ -211,9 +221,7 @@ body {
     left: 39vw;
 }
 
-/*****DILLEMMA , VALG OG RESULTAT**********/
-
-#snapchat_nøgen {
+#snapchat_noegen {
     background-image: url(pics/noegenpige.svg);
     background-size: 100%;
     position: absolute;
@@ -222,7 +230,6 @@ body {
     top: 5vw;
     left: 62vw;
 }
-
 
 #dilemma2 {
     background-image: url(pics/scenarie_2.svg);
@@ -274,7 +281,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/senarie2_1.svg);
+    background-image: url(Resultatskaerm2/senarie2_1.svg);
     background-size: 100%;
 }
 
@@ -282,7 +289,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/senarie2_2.svg);
+    background-image: url(Resultatskaerm2/senarie2_2.svg);
     background-size: 100%;
 }
 
@@ -290,27 +297,40 @@ body {
     position: absolute;
     width: 100vw;
     height: 56.25vw;
-    background-image: url(pics/senarie2_3.svg);
+    background-image: url(Resultatskaerm2/senarie2_3.svg);
     background-size: 100%;
 }
 
 
 #next2 {
-    background-image: url(pics/play2.svg);
+    background-image: url(pics/next_button.svg);
     background-size: 100%;
     position: absolute;
-    height: 15vw;
-    width: 15vw;
+    height: 10vw;
+    width: 10vw;
     top: 43vw;
     left: 85vw;
     cursor: pointer;
 
 }
 
-/***********SENARIE 3************/
+#next2:hover {
+
+    width: 11vw;
+    height: 11vw;
+}
 
 #scenarie3 {
     background-image: url(pics/party.svg);
+    background-size: 100%;
+    position: absolute;
+    height: 56.25vw;
+    width: 100vw;
+}
+
+#senarie3_frame2 {
+
+    background-image: url(baggrunde_svg/baggrund_lilla.svg);
     background-size: 100%;
     position: absolute;
     height: 56.25vw;
@@ -394,8 +414,6 @@ body {
     transform: rotate(180deg);
 }
 
-/*****DILLEMMA , VALG OG RESULTAT**********/
-
 #bryster_stor {
     background-image: url(pics/pige_krop.svg);
     background-size: 100%;
@@ -450,7 +468,7 @@ body {
 }
 
 #result3_1 {
-    background-image: url(pics/senarie3_1.svg);
+    background-image: url(Resultatskaerm3/senarie3_1.svg);
     background-size: 100%;
     position: absolute;
     height: 56.25vw;
@@ -458,7 +476,7 @@ body {
 }
 
 #result3_2 {
-    background-image: url(pics/senarie3_2.svg);
+    background-image: url(Resultatskaerm3/senarie3_2.svg);
     background-size: 100%;
     position: absolute;
     height: 56.25vw;
@@ -466,7 +484,7 @@ body {
 }
 
 #result3_3 {
-    background-image: url(pics/senarie3_3.svg);
+    background-image: url(Resultatskaerm3/senarie3_3.svg);
     background-size: 100%;
     position: absolute;
     height: 56.25vw;
@@ -474,19 +492,25 @@ body {
 }
 
 #next3 {
-    background-image: url(pics/play2.svg);
+    background-image: url(pics/next_button.svg);
     background-size: 100%;
     position: absolute;
-    height: 15vw;
-    width: 15vw;
+    height: 10vw;
+    width: 10vw;
     top: 43vw;
     left: 85vw;
     cursor: pointer;
 
 }
 
+#next3:hover {
 
-/***********EFFEKTER***********/
+    width: 11vw;
+    height: 11vw;
+}
+
+
+/* effekter */
 .hide {
     visibility: hidden;
 }
@@ -585,4 +609,32 @@ body {
     100% {
         transform: translate(1px, -2px) rotate(-1deg);
     }
+}
+
+
+/********** END GAME **********/
+
+#end {
+
+    position: relative;
+    width: 100vw;
+    height: 56.25vw;
+    background-image: url(baggrunde_svg/slutskearm.png);
+    background-size: 100%;
+
+
+}
+
+#play_again {
+
+    position: absolute;
+    width: 10vw;
+    height: 10vw;
+    top: 40vw;
+    right: 5vw;
+    background-image: url(pics/play_again.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
 }

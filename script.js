@@ -35,20 +35,17 @@ function hideStart() {
 function showScenarie1() {
     console.log("show scenarie1");
     document.querySelector("#scenarie1").classList.add("show");
+
     document.querySelector("#telefon").classList.add("show");
 
-    setTimeout(animationSenarie1, 4000);
+    setTimeout(animationSenarie1, 2000);
 
 }
 
 function animationSenarie1() {
-
-    //SKIFT AF TELEFON SKÆRM//
     document.querySelector("#telefon_tissemand").classList.add("shake");
     document.querySelector("#telefon").classList.remove("show");
     document.querySelector("#telefon_tissemand").classList.add("show");
-
-    //LYD//
     document.querySelector("#besked_tone").play();
     document.querySelector("#vibration_mobil").play();
 
@@ -67,7 +64,9 @@ function showOptions1() {
 
     //KLIK FOR RESULTAT//
     document.querySelector("#valg1").addEventListener("click", showResult1_1);
+
     document.querySelector("#valg2").addEventListener("click", showResult1_2);
+
     document.querySelector("#valg3").addEventListener("click", showResult1_3);
 }
 
@@ -106,6 +105,7 @@ function showResult1_2() {
     document.querySelector("#valg1").classList.remove("show");
     document.querySelector("#valg2").classList.remove("show");
     document.querySelector("#valg3").classList.remove("show");
+
 
     //VIS DILEMMA OG MULIGHEDER//
     document.querySelector("#result1").classList.add("show");
@@ -173,30 +173,26 @@ function showSenarie2() {
     document.querySelector("#bruser_larm").play();
     document.querySelector("#bruser").play();
 
-    setTimeout(animationSenarie2, 1000);
+    setTimeout(animationSenarie2, 2000);
 
 }
 
 function animationSenarie2() {
     console.log("animationSenarie2");
 
-    //SKIFT AF BILLEDE PÅ TELEFON VED SNAP//
     //document.querySelector("#snapchat").classList.remove("show");
-    //document.querySelector("#").classList.add("show");
+    //document.querySelector("#telefon_tissemand").classList.add("show");
     document.querySelector("#kamera").play();
 
-    setTimeout(showSenarie2_frame2, 1000);
+    setTimeout(showSenarie2_frame2, 2000);
 
 }
 
 function showSenarie2_frame2() {
     console.log("showSenarie2_frame2")
 
-    //SKAL FJERNES NÅR ANAIMATIONEN OVER KØRER//
     document.querySelector("#snapchat").classList.remove("show");
-
-    //NØGEN PIGE//
-    document.querySelector("#snapchat_nøgen").classList.add("show");
+    document.querySelector("#snapchat_noegen").classList.add("show");
 
     showOptions2();
 }
@@ -211,9 +207,10 @@ function showOptions2() {
     document.querySelector("#valg2_2").classList.add("show");
     document.querySelector("#valg3_2").classList.add("show");
 
-    //KLIK FOR RESULTAT//
     document.querySelector("#valg1_2").addEventListener("click", showResult2_1);
+
     document.querySelector("#valg2_2").addEventListener("click", showResult2_2);
+
     document.querySelector("#valg3_2").addEventListener("click", showResult2_3);
 }
 
@@ -267,11 +264,12 @@ function showResult2_3() {
 function hideResult2_1() {
     console.log("hideResult2_1");
     document.querySelector("#scenarie2").classList.remove("show");
-    document.querySelector("#snapchat_nøgen").classList.remove("show");
+    document.querySelector("#snapchat_noegen").classList.remove("show");
     document.querySelector("#dilemma2").classList.remove("show");
     document.querySelector("#valg1_2").classList.remove("show");
     document.querySelector("#valg2_2").classList.remove("show");
     document.querySelector("#valg3_2").classList.remove("show");
+
     document.querySelector("#result2_1").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
@@ -282,11 +280,12 @@ function hideResult2_1() {
 function hideResult2_2() {
     console.log("hideResult2_2");
     document.querySelector("#scenarie2").classList.remove("show");
-    document.querySelector("#snapchat_nøgen").classList.remove("show");
+    document.querySelector("#snapchat_noegen").classList.remove("show");
     document.querySelector("#dilemma2").classList.remove("show");
     document.querySelector("#valg1_2").classList.remove("show");
     document.querySelector("#valg2_2").classList.remove("show");
     document.querySelector("#valg3_2").classList.remove("show");
+
     document.querySelector("#result2_2").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
@@ -297,11 +296,12 @@ function hideResult2_2() {
 function hideResult2_3() {
     console.log("hideResult2_3");
     document.querySelector("#scenarie2").classList.remove("show");
-    document.querySelector("#snapchat_nøgen").classList.remove("show");
+    document.querySelector("#snapchat_noegen").classList.remove("show");
     document.querySelector("#dilemma2").classList.remove("show");
     document.querySelector("#valg1_2").classList.remove("show");
     document.querySelector("#valg2_2").classList.remove("show");
     document.querySelector("#valg3_2").classList.remove("show");
+
     document.querySelector("#result2_3").classList.remove("show");
     document.querySelector("#next2").classList.remove("show");
 
@@ -320,7 +320,7 @@ function startSenarie3() {
     //LYD///
     document.querySelector("#fest_larm").play();
 
-    setTimeout(hideSenarie3, 1500);
+    setTimeout(hideSenarie3, 2000);
 
 }
 
@@ -337,16 +337,19 @@ function hideSenarie3() {
 
 function startSenarie3_frame2() {
     console.log("startSenarie3_frame2");
+    document.querySelector("#senarie3_frame2").classList.add("show");
+    document.querySelector("#senarie3_frame2").classList.add("show");
     document.querySelector("#person_oppe_1").classList.add("show");
     document.querySelector("#person_oppe_2").classList.add("show");
     document.querySelector("#person_oppe_3").classList.add("show");
     document.querySelector("#bryster").classList.add("show");
 
-    setTimeout(hideSenarie3_frame2, 2000);
+    setTimeout(hideSenarie3_frame2, 4000);
 
 }
 
 function hideSenarie3_frame2() {
+   document.querySelector("#senarie3_frame2").classList.remove("show");
     document.querySelector("#person_oppe_1").classList.remove("show");
     document.querySelector("#person_oppe_2").classList.remove("show");
     document.querySelector("#person_oppe_3").classList.remove("show");
@@ -361,11 +364,15 @@ function startSenarie3_frame3() {
 
     document.querySelector("#bryster_stor").classList.add("show");
     document.querySelector("#dilemma3").classList.add("show");
+
     document.querySelector("#valg3_3_1").classList.add("show");
+
     document.querySelector("#valg3_3_2").classList.add("show");
+
     document.querySelector("#valg3_3_3").classList.add("show");
 
     ///klik for resultat/////
+
     document.querySelector("#valg3_3_1").addEventListener("click", showResult3_1);
     document.querySelector("#valg3_3_2").addEventListener("click", showResult3_2);
     document.querySelector("#valg3_3_3").addEventListener("click", showResult3_3);
@@ -386,10 +393,8 @@ function showResult3_1() {
     document.querySelector("#valg3_3_2").classList.remove("show");
     document.querySelector("#valg3_3_3").classList.remove("show");
 
-    //VIS RESULTAT//
     document.querySelector("#result3_1").classList.add("show");
 
-    //FREM KNAP//
     document.querySelector("#next3").classList.add("show");
     document.querySelector("#next3").addEventListener("click", hideResult3_1);
 }
@@ -429,10 +434,8 @@ function showResult3_3() {
     document.querySelector("#valg3_3_2").classList.remove("show");
     document.querySelector("#valg3_3_3").classList.remove("show");
 
-    //VIS RESULTAT//
     document.querySelector("#result3_3").classList.add("show");
 
-    //FREM KANP//
     document.querySelector("#next3").classList.add("show");
     document.querySelector("#next3").addEventListener("click", hideResult3_3);
 }
@@ -442,6 +445,7 @@ function hideResult3_1() {
     console.log("hideResult3_1");
 
     document.querySelector("#result3_1").classList.remove("show");
+
     document.querySelector("#next3").classList.remove("show");
 
     endGame();
@@ -451,6 +455,7 @@ function hideResult3_2() {
     console.log("hideResult3_2");
 
     document.querySelector("#result3_2").classList.remove("show");
+
     document.querySelector("#next3").classList.remove("show");
 
     endGame();
@@ -461,11 +466,19 @@ function hideResult3_3() {
     console.log("hideResult3_3");
 
     document.querySelector("#result3_3").classList.remove("show");
+
     document.querySelector("#next3").classList.remove("show");
 
     endGame();
 }
 
 function endGame() {
+    console.log("endGame")
 
+    document.querySelector("#end").classList.add("show");
+    document.querySelector("#play_again").classList.add("show");
+    document.querySelector("#play_again").classList.add("pulse");
+    document.querySelector("#play_again").addEventListener("click", hideendGame);
+
+    showStart();
 }
